@@ -13,7 +13,7 @@ const getOneWorkout = (req, res) => {
 	if (!workoutId) {
 		return;
 	}
-
+	// add
 	const workout = workoutService.getOneWorkout(req.params.workoutId);
 	res.send(`Get workout ${req.params.workoutId}`);
 };
